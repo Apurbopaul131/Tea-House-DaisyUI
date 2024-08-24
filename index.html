@@ -36,6 +36,8 @@
           extend: {
             colors: {
               clifford: "#da373d",
+              'gradient-start':'#ff8938',
+              'gradient-end':'#f00'
             },
           },
         },
@@ -46,8 +48,8 @@
     <header class="px-20 py-4">
       <!-- banner section start -->
       <section class="">
-        <div class="hero">
-          <div class="hero-content flex-col items-center gap-8 sm:flex-row">
+        <div class="">
+          <div class="flex justify-around flex-col items-center gap-8 sm:flex-row">
             <div>
               <h1 class="text-7xl font-extrabold">
                 It's good
@@ -60,10 +62,13 @@
                 Tea and Botanical Solutions Supplier Give Optimum Satisfaction
                 To Your Taste Buds.
               </p>
-              <button class="btn btn-primary">Explore More</button>
+              <button class="btn bg-gradient-to-r from-gradient-start to-gradient-end text-white">
+                Explore More
+                <img src="images/arrow.png" alt="">
+              </button>
             </div>
             <div class="relative">
-              <img src="./images/banner.png" class="max-w-sm" />
+              <img src="./images/banner.png" class="max-w-lg" />
               <!-- ratting badge -->
               <div
                 class="absolute bottom-4 left-0 flex gap-4 items-center p-3 w-60 shadow-lg rounded bg-white"
@@ -79,7 +84,8 @@
         </div>
       </section>
     </header>
-    <main class="px-20 py-4">
+    <main class="px-5 sm:px-20 py-4">
+ <!-- /     Tea featured section start -->
       <section class="my-24">
         <h3 class="text-center text-5xl font-extrabold">
           Our Featured Products
@@ -126,7 +132,143 @@
           </div>
         </div>
       </section>
+      <!-- Tea featured section start -->
+      <section class="flex gap-5 flex-col sm:flex-row mb-24">
+        <!-- pictue part -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-5 flex-1">
+          <div class="bg-red-200 h-32 rounded-md"></div>
+          <div class="flex justify-center row-span-2 bg-red-200 rounded-md py-5">
+            <img src="./images/fresh-1.png" alt="">
+          </div>
+          <div class="flex justify-center row-span-2 bg-slate-200 rounded-md py-5">
+            <img src="./images/fresh-2.png" alt="">
+          </div>
+          <div class="bg-slate-200 h-32 rounded-md">
+
+          </div>
+        </div>
+        <!-- conent part -->
+        <div class="flex-1 space-y-5">
+          <div class="space-y-2">
+            <h1 class="text-5xl font-extrabold">Great Tea, Freshly Presented</h1>
+            <p>The meaning of gong cha is chanese is to provide the best tea to emperor from all possessions . It represents the highest quality and self expectation. Establishing in 2006, Gong cha had been deeply appreciated by its custoers  because of good words of mouth and unique customized service orginated from Taiwan.</p>
+          </div>
+          <div class="space-y-2">
+            <h4 class="text-2xl font-extrabold">Unique Taste</h4>
+            <p>A Unique and different style from other teapots gives a luxurious and minimalist impression</p>
+          </div>
+          <div class="space-y-2">
+            <h4 class="text-2xl font-extrabold">Premium Quality</h4>
+            <p>Premium Quality that makes tea more elegant and more durable when you use it.</p>
+          </div>
+        </div>
+      </section>
+      <!-- supper client section start -->
+       <section class="flex flex-col sm:flex-row sm:items-center bg-gradient-to-r from-gradient-start to-gradient-end rounded-xl gap-12 mb-24 px-16 py-24">
+        <div class="space-y-3 mr-16">
+          <h3 class="text-5xl font-extrabold">Meet Our Super 
+            <br>
+            Clients</h3>
+          <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. </p>
+          <div class="btn text-red-600 border-red-600">Show All</div>
+        </div>
+        <!-- review container -->
+        <div class="relative">
+          <!-- comming review -->
+          <div class="relative px-10 py-6 shadow-xl rounded-2xl space-y-3 bg-white mb-16 opacity-40 sm:w-[454px] z-10">
+            <div class="absolute -left-10 -top-6 border-4 border-white rounded-full bg-white">
+              <img src="./images/client.png" alt="" class="">
+            </div>
+            <p>We are providing the best and suitable home insurance services for the people who are interested to treatment</p>
+            <div class="">
+              <h3 class="text-xl font-bold">Ilham Yuda</h3>
+              <p>Businessman</p>
+            </div>
+            <div class="flex justify-end">
+              <img src="./images/circles.png" alt="">
+            </div>
+          </div>
+          <!-- current review -->
+          <div class="absolute top-40 -left-8 sm:-left-28 px-10 py-6 shadow-xl rounded-2xl space-y-3 bg-white sm:w-[454px] z-20">
+            <div class="absolute -left-10 -top-6 border-4 border-white rounded-full bg-white">
+              <img src="./images/client.png" alt="" class="">
+            </div>
+            <p>We are providing the best and suitable home insurance services for the people who are interested to treatment</p>
+            <div class="">
+              <h3 class="text-xl font-bold">Ilham Yuda</h3>
+              <p>Businessman</p>
+            </div>
+            <div class="flex justify-end">
+              <img src="./images/circles.png" alt="">
+            </div>
+          </div>
+          <!-- previous review -->
+          <div class="relative px-10 py-6 shadow-xl rounded-2xl space-y-3 bg-white opacity-10 sm:w-[454px] z-20">
+            <div class="absolute -left-10 -top-6 border-4 border-white rounded-full bg-white">
+              <img src="./images/client.png" alt="" class="">
+            </div>
+            <p>We are providing the best and suitable home insurance services for the people who are interested to treatment</p>
+            <div class="">
+              <h3 class="text-xl font-bold">Ilham Yuda</h3>
+              <p>Businessman</p>
+            </div>
+            <div class="flex justify-end">
+              <img src="./images/circles.png" alt="">
+            </div>
+          </div>
+        </div>
+       </section>
     </main>
-    <footer></footer>
+    <footer class="bg-base-200 px-12 py-6 sm:px-40 sm:py-20">
+      <div class="flex justify-between">
+        <img src="./images/cup.png" alt="">
+        <div class="flex gap-5 items-center">
+          <p>Ready to get strated?</p>
+          <div class="btn bg-gradient-to-r from-gradient-start to-gradient-end text-white">Get Started</div>
+        </div>
+      </div>
+      <div class="footer my-20">
+      <nav>
+    <h6 class="footer-title">Services</h6>
+    <a class="link link-hover">Branding</a>
+    <a class="link link-hover">Design</a>
+    <a class="link link-hover">Marketing</a>
+    <a class="link link-hover">Advertisement</a>
+  </nav>
+  <nav>
+    <h6 class="footer-title">Company</h6>
+    <a class="link link-hover">About us</a>
+    <a class="link link-hover">Contact</a>
+    <a class="link link-hover">Jobs</a>
+    <a class="link link-hover">Press kit</a>
+  </nav>
+  <nav>
+    <h6 class="footer-title">Legal</h6>
+    <a class="link link-hover">Terms of use</a>
+    <a class="link link-hover">Privacy policy</a>
+    <a class="link link-hover">Cookie policy</a>
+  </nav>
+  <form>
+    <h6 class="footer-title">Newsletter</h6>
+    <fieldset class="form-control w-80">
+      <label class="label">
+        <span class="label-text">Enter your email address</span>
+      </label>
+      <div class="">
+        <input
+          type="text"
+          placeholder="Email address"
+          class="border-b-2 border-black bg-transparent outline-none py-2" />
+        <button class="btn rounded-full bg-gradient-to-r from-gradient-start to-gradient-end text-white">
+          <i class="fa-solid fa-arrow-right"></i>
+        </button>
+      </div>
+    </fieldset>
+  </form>
+      </div>
+  <aside class="text-center">
+    <p>Copyright © 2024 - All right reserved by ACME Industries Ltd</p>
+  </aside>
+</footer>
   </body>
 </html>
